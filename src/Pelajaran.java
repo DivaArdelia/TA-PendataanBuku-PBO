@@ -14,25 +14,20 @@ public class Pelajaran extends Buku implements Diskon{
     public String getISBN() {
         return ISBN;
     }
-
     public int getLebar() {
         return lebar;
     }
-
     public int getPanjang() {
         return panjang;
     }
-
     @Override
     double harga() {
         return (super.getHal() * 300);
     }
-
     @Override
     public double hitungDiskon() {
         return 0.2 * harga();
     }
-
     @Override
     public double hargatototal() {
         return harga() - hitungDiskon();

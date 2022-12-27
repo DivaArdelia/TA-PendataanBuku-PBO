@@ -1,15 +1,12 @@
 public class Komik extends Buku implements  Diskon{
-
     String ISBN;
     int vol;
-
     public Komik(String judul, String author, String publisher, String bulanterbit, int tahunterbit, int hal,
                  String ISBN, int vol) {
         super(judul, author, publisher, bulanterbit, tahunterbit, hal);
         this.ISBN = ISBN;
         this.vol = vol;
     }
-
     public String getISBN() {
         return ISBN;
     }
