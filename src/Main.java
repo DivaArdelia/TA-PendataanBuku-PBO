@@ -9,9 +9,9 @@ public class Main {
 
         Novel nvl = new Novel("Koala Kumal", "Raditya Dika", "Gagas Media", "Januari", 2015,
                 250, "0000768154");
-        Novel nvl2 = new Novel("Selamat Tinggal", "Tere Liye", "Gramedia Pustaka Utama", "-", 2020,
+        Novel nvl2 = new Novel("Selamat Tinggal", "Tere Liye", "Gramedia Pustaka Utama", "Mei", 2020,
                 360, "9786020647821");
-        Novel nvl3 = new Novel("The Ickabog", "J.K. Rowling", "Hachette Children's Group", "-",
+        Novel nvl3 = new Novel("The Ickabog", "J.K. Rowling", "Hachette Children's Group", "Oktober",
                 2020, 288, "9781510202252");
         Novel nvl4 = new Novel("Heartbreak MOTEL", "Ika Natassa", "Gramedia Pustaka Utama", "April",
                 2022, 400, "9786020658841");
@@ -61,6 +61,8 @@ public class Main {
             System.out.println("\n+===============================+");
             System.out.println("|    PROGRAM PENDATAAN BUKU     |");
             System.out.println("+===============================+");
+            System.out.println("|    Tampilan Identitas Buku    |");
+            System.out.println("+-------------------------------+");
             System.out.println("|Menu Buku :                    |");
             System.out.println("|1. Novel                       |");
             System.out.println("|2. Komik                       |");
@@ -70,85 +72,91 @@ public class Main {
             pilih = input.nextInt();
             if (pilih == 1) {
                 do {
+                    System.out.println("=======================================================");
                     td.TampilJudulnvl();
+                    System.out.println("=======================================================");
                     System.out.print("Masukkan pilihan buku untuk detail buku tersebut : ");
                     pil = input.nextInt();
 
                     if (pil == 1) {
                         System.out.println();
-                        System.out.println("== SPESIFIKASI BUKU " + nvl.getJudul() + " == " + "\n");
+                        System.out.println("== Identitas Buku " + nvl.getJudul() + " == " + "\n");
                         nvl.tampilan();
                     } else if (pil == 2) {
                         System.out.println();
-                        System.out.println("== SPESIFIKASI BUKU " + nvl2.getJudul() + " == " + "\n");
+                        System.out.println("== Identitas Buku " + nvl2.getJudul() + " == " + "\n");
                         nvl2.tampilan();
                     } else if (pil == 3) {
                         System.out.println();
-                        System.out.println("== SPESIFIKASI BUKU " + nvl3.getJudul() + " == " + "\n");
+                        System.out.println("== Identitas Buku " + nvl3.getJudul() + " == " + "\n");
                         nvl3.tampilan();
                     } else if (pil == 4) {
                         System.out.println();
-                        System.out.println("== SPESIFIKASI BUKU " + nvl4.getJudul() + " == " + "\n");
+                        System.out.println("== Identitas Buku" + nvl4.getJudul() + " == " + "\n");
                         nvl4.tampilan();
                     } else if (pil == 5) {
                         System.out.println();
-                        System.out.println("== SPESIFIKASI BUKU " + nvl5.getJudul() + " == " + "\n");
+                        System.out.println("== Identitas Buku " + nvl5.getJudul() + " == " + "\n");
                         nvl5.tampilan();
                     }
                 }while (pil!=6);
 
             } else if (pilih == 2) {
                 do {
+                    System.out.println("=======================================================");
                     td.TampilJudulkmk();
+                    System.out.println("=======================================================");
                     System.out.print("Masukkan pilihan buku untuk detail buku tersebut : ");
                     pil = input.nextInt();
                     if (pil == 1) {
                         System.out.println();
-                        System.out.println("== SPESIFIKASI BUKU " + kmk.getJudul() + " == " + "\n");
+                        System.out.println("== Identitas Buku " + kmk.getJudul() + " == " + "\n");
                         kmk.tampilan();
                     } else if (pil == 2) {
                         System.out.println();
-                        System.out.println("== SPESIFIKASI BUKU " + kmk2.getJudul() + " == " + "\n");
+                        System.out.println("== Identitas Buku " + kmk2.getJudul() + " == " + "\n");
                         kmk2.tampilan();
                     } else if (pil == 3) {
                         System.out.println();
-                        System.out.println("== SPESIFIKASI BUKU " + kmk3.getJudul() + " == " + "\n");
+                        System.out.println("== Identitas Buku " + kmk3.getJudul() + " == " + "\n");
                         kmk3.tampilan();
                     } else if (pil == 4) {
                         System.out.println();
-                        System.out.println("== SPESIFIKASI BUKU " + kmk4.getJudul() + " == " + "\n");
+                        System.out.println("== Identitas Buku " + kmk4.getJudul() + " == " + "\n");
                         kmk4.tampilan();
                     } else if (pil == 5) {
                         System.out.println();
-                        System.out.println("== SPESIFIKASI BUKU " + kmk5.getJudul() + " == " + "\n");
+                        System.out.println("== Identitas Buku " + kmk5.getJudul() + " == " + "\n");
                         kmk5.tampilan();
                     }
                 }while (pil!=6);
             }
                 else if (pilih == 3) {
                 do {
+                    System.out.println("=======================================================");
                     td.TampilJudulpljrn();
+                    System.out.println("=======================================================");
                     System.out.print("Masukkan pilihan buku untuk detail buku tersebut : ");
                     pil = input.nextInt();
                     if (pil == 1) {
                         System.out.println();
-                        System.out.println("== SPESIFIKASI BUKU " + plj.getJudul() + " == " + "\n");
+                        System.out.println("== Identitas Buku " + plj.getJudul() + " == " + "\n");
                         plj.tampilan();
                     } else if (pil == 2) {
                         System.out.println();
-                        System.out.println("== SPESIFIKASI BUKU " + plj2.getJudul() + " == " + "\n");
+                        System.out.println("== Identitas Buku " + plj2.getJudul() + " == " + "\n");
                         plj2.tampilan();
                     } else if (pil == 3) {
                         System.out.println();
-                        System.out.println("== SPESIFIKASI BUKU " + plj3.getJudul() + " == " + "\n");
+                        System.out.println("== Identitas Buku " + plj3.getJudul() + " == " + "\n");
                         plj3.tampilan();
                     } else if (pil == 4) {
                         System.out.println();
-                        System.out.println("== SPESIFIKASI BUKU " + plj4.getJudul() + " == " + "\n");
+                        System.out.println("== Identitas Buku " + plj4.getJudul() + " == " + "\n");
                         plj4.tampilan();
                     } else if (pil == 5) {
                         System.out.println();
-                        System.out.println("== SPESIFIKASI BUKU " + plj5.getJudul() + " == " + "\n");
+                        System.out.println("== Identitas Buku " + plj5.getJudul() + " == " + "\n");
                         plj5.tampilan();
                     }
                 }while (pil!=6);
